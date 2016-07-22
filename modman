@@ -1,0 +1,4 @@
+app/code/community/Mbiz/Ajax app/code/community/Mbiz/Ajax
+app/etc/modules/Mbiz_Ajax.xml app/etc/modules/Mbiz_Ajax.xml
+app/design/frontend/base/default/layout/mbiz_ajax.xml app/design/frontend/base/default/layout/mbiz_ajax.xml
+

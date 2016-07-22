@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of Mbiz_Ajax for Magento.
+ *
+ * @license proprietary
+ * @author Jacques Bodin-Hullin <j.bodinhullin@monsieurbiz.com> <@jacquesbh>
+ * @category Mbiz
+ * @package Mbiz_Ajax
+ * @copyright Copyright (c) 2016 Monsieur Biz (https://monsieurbiz.com/)
+ */
+-->
+<config>
+    <modules>
+        <Mbiz_Ajax>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Mbiz_Ajax>
+    </modules>
+</config>

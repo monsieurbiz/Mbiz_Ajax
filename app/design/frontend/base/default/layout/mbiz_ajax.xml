@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/**
+ * This file is part of Mbiz_Ajax for Magento.
+ *
+ * @license proprietary
+ * @author Jacques Bodin-Hullin <j.bodinhullin@monsieurbiz.com> <@jacquesbh>
+ * @category Mbiz
+ * @package Mbiz_Ajax
+ * @copyright Copyright (c) 2016 Monsieur Biz (https://monsieurbiz.com/)
+ */
+-->
+<layout version="0.1.0">
+
+    <AJAX_catalog_category_view>
+        <remove name="root"/>
+        <block type="catalog/product_list" name="product_list" template="catalog/product/list.phtml" output="toHtml">
+            <block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                <block type="page/html_pager" name="product_list_toolbar_pager"/>
+            </block>
+            <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+        </block>
+    </AJAX_catalog_category_view>
+
+</layout>

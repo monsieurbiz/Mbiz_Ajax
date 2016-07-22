@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of Mbiz_Ajax for Magento.
+ *
+ * @license proprietary
+ * @author Jacques Bodin-Hullin <j.bodinhullin@monsieurbiz.com> <@jacquesbh>
+ * @category Mbiz
+ * @package Mbiz_Ajax
+ * @copyright Copyright (c) 2016 Monsieur Biz (https://monsieurbiz.com/)
+ */
+-->
+<config>
+    <modules>
+        <Mbiz_Ajax>
+            <version>0.1.0</version>
+        </Mbiz_Ajax>
+    </modules>
+    <frontend>
+        <routers>
+            <catalog>
+                <args>
+                    <modules>
+                        <Mbiz_Ajax before="Mage_Catalog">Mbiz_Ajax_Catalog</Mbiz_Ajax>
+                    </modules>
+                </args>
+            </catalog>
+        </routers>
+        <events>
+            <controller_action_layout_load_before>
+                <observers>
+                    <mbiz_ajax_add_ajax_handles>
+                        <class>mbiz_ajax/observer</class>
+                        <method>addAjaxHandles</method>
+                    </mbiz_ajax_add_ajax_handles>
+                </observers>
+            </controller_action_layout_load_before>
+        </events>
+        <layout>
+            <updates>
+                <mbiz_ajax module="Mbiz_Ajax">
+                    <file>mbiz_ajax.xml</file>
+                </mbiz_ajax>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <models>
+            <mbiz_ajax>
+                <class>Mbiz_Ajax_Model</class>
+            </mbiz_ajax>
+        </models>
+        <helpers>
+            <mbiz_ajax>
+                <class>Mbiz_Ajax_Helper</class>
+            </mbiz_ajax>
+        </helpers>
+    </global>
+</config>
